@@ -1,0 +1,10 @@
+.nav {height: 425px; background: url(/images/home-bg.jpg) left top no-repeat; width: 100%;color: #f4f4f3;}
+.nav { background-size:100% 425px;}
+.nav .navhead { height: 90px;}
+.nav .logo { float: left; margin-left:140px; height: 90px; line-height: 90px; font-size: 20px; font-weight: 600;}
+.nav .nav-list { float: left; height: 90px; margin-left: 300px;}
+.nav-list li { float: left; margin-left:80px; height: 100%; font-size: 18px; line-height: 90px;}
+.nav-list li a { color: #fff; font-weight:600; text-decoration: none;}
+.login { float:right; height: 90px; margin-left: 50px;}
+.login button { background: none; border:none; color: #fff; font-weight:600; font-size: 18px; line-height: 90px; outline: none!important;}
+.container .row a {text-decoration: none; color: #000;}

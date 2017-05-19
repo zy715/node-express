@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>留言</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/show.css"/>
+   	<script src="http://www.jq22.com/jquery/bootstrap-3.3.4.js"></script>
+   	<link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/bootstrap-3.3.4.css">
+  </head>
+  <body>
+     <div class="nav">
+  			<div class="navhead">
+	  			<div class="logo">ZY blog</div>	
+	  			<ul class="nav-list">
+	  					<li><a href="">home</a></li>
+	  					<li><a href="">share</a></li>
+	  					<li><a href="">message board</a></li>
+	  			</ul>
+  			</div>
+  	</div>
+    <!--<table class="table table-hover">
+	    	<tr>
+	    		<th>标题</th>
+	    		<th>内容</th>
+	    	</tr>
+	    	<%  shuju.forEach(function(item,index){  %>
+		    	<tr>
+		    		<td><%- item.biaoti  %></td>
+		    		<td><%- item.con %></td>
+		    	</tr>
+	    	<%  }) %>
+	    	
+    </table>-->
+    
+    <%  shuju.forEach(function(item,index){  %>
+		    	<div class="panel panel-success">
+		    		 <div class="panel-heading">
+		        		<h3 class="panel-title"><%- item.biaoti  %></h3>
+		   			 </div>
+		    		<div class="panel-body">
+		        		<%- item.con %>
+		    		</div>
+		    	</div>
+	    	<%  }) %>
+    
+  </body>
+</html>

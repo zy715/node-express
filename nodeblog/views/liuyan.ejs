@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>留言</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" type="text/css" href='/stylesheets/liuyan.css' />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap/css/bootstrap.min.css"/>
+    <script src="/stylesheets/bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+  </head>
+  <body>
+    
+     <div class="nav">
+  			<div class="navhead">
+	  			<div class="logo">ZY blog</div>	
+	  			<ul class="nav-list">
+	  					<li><a href="">home</a></li>
+	  					<li><a href="">share</a></li>
+	  					<li><a href="">message board</a></li>
+	  			</ul>
+  			</div>
+  	</div>
+    
+    <form action="/users/list" method="post" class="form">
+    	<fieldset>
+					<legend class="leg">感谢您留言</legend>
+    		<div class="form-group">
+    			<label for="name">标题</label>
+    			<input type="text" name="biaoti" class="form-control"/></div>
+    
+    		<div class="form-group">
+    			<label for="name">内容</label>
+    			<textarea name="con" class="form-control" rows="5"></textarea></div>
+    	
+    		<input type="submit" value="发布留言" class="btn-lg smt"/>
+    	</fieldset>
+    </form>
+    
+ 
+  </body>
+</html>

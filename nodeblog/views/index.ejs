@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/index.css"/>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap/css/bootstrap.min.css"/>
+  </head>
+  <body>
+  	<div class="nav">
+  			<div class="navhead">
+	  			<div class="logo">ZY blog</div>	
+	  			<ul class="nav-list">
+	  					<li><a href="/">home</a></li>
+	  					<li><a href="">share</a></li>
+	  					<li><a href="/users/showlist">message board</a></li>
+	  			</ul>
+	  			<div class="login">
+				  	<% if(!user){ %>
+				    <button onclick="location.href='/login'">login</button>
+				    <button onclick="location.href='/register'">registered</button>
+				    <% }else{ %>
+				    		<button onclick="location.href='/relogin'">drop out</button>
+				    		<button onclick="location.href='/liuyan'">leave a message</button>
+				    <%}%>
+	  			</div>
+  			</div>
+  	</div>
+  	    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+                <div class="post-preview">
+                    <a href="/listdet?id=591e9966030afe27148d2c76">
+                        <h2 class="post-title">
+                            Man must explore, and this is exploration at its greatest
+                        </h2>
+                        <h3 class="post-subtitle">
+                            Problems look mighty small from 150 miles up
+                        </h3>
+                    </a>
+                    <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on September 24, 2017</p>
+                </div>
+                <hr>
+                <div class="post-preview">
+                    <a href="/listdet?id=591e9989030afe27148d2c77">
+                        <h2 class="post-title">
+                            I believe every human has a finite number of heartbeats. I don't intend to waste any of mine.
+                        </h2>
+                    </a>
+                    <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on September 18, 2017</p>
+                </div>
+                <hr>
+                <div class="post-preview">
+                    <a href="/listdet?id=591e99ce030afe27148d2c78">
+                        <h2 class="post-title">
+                            Science has not yet mastered prophecy
+                        </h2>
+                        <h3 class="post-subtitle">
+                            We predict too much for the next year and yet far too little for the next ten.
+                        </h3>
+                    </a>
+                    <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on August 24, 2017</p>
+                </div>
+                <hr>
+                <div class="copyrights">Collect from <a href="http://www.cssmoban.com/"  title="网站模板"></a></div>
+                <div class="post-preview">
+                    <a href="/listdet?id=591e99ff030afe27148d2c79">
+                        <h2 class="post-title">
+                            Failure is not an option
+                        </h2>
+                        <h3 class="post-subtitle">
+                            Many say exploration is part of our destiny, but it’s actually our duty to future generations.
+                        </h3>
+                    </a>
+                    <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on July 8, 2017</p>
+                </div>
+                <hr>
+                <!-- Pager -->
+                <div class="clearfix">
+                    <a class="btn btn-secondary float-right" href="#">Older Posts &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <span><%- user%></span>
+  </body>
+</html>
